@@ -27,6 +27,11 @@ async function run() {
     // Connect the client to the server	(optional starting in v4.7)
     await client.connect(); 
 
+    app.post('/car', async(req, res) => {
+      const newCar = req.body;
+      console.log(newCar)
+    })
+
     const carCollection = client.db('CarSite').collection('cars');
 
     app.get('/cars', async(req, res) => {
@@ -39,7 +44,12 @@ async function run() {
     app.get('/cars/:id', async(req, res) =>{
       const id = req.params.id;
       const query = {_id: new ObjectId(id)}
-      const result= await carCollection.findOne(query)
+
+      const options ={
+        projection: {name: 1, price: 1, seller_name: 1, quantity: 1, rating: 1, category: 1  }
+      };
+
+      const result= await carCollection.findOne(query, options)
       res.send(result)
     })
 
