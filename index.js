@@ -1,6 +1,6 @@
 const express = require('express');
 const cors = require('cors');
-const { MongoClient, ServerApiVersion } = require('mongodb');
+const { MongoClient, ServerApiVersion, ObjectId } = require('mongodb');
 require('dotenv').config()
 const app = express();
 const port = process.env.PORT || 5000;
@@ -9,10 +9,7 @@ const port = process.env.PORT || 5000;
 app.use(cors());
 app.use(express.json());
 
-console.log(process.env.TMP_USER)
-
-
-
+console.log(process.env.TMP_USER) 
 
 const uri = `mongodb+srv://${process.env.TMP_USER}:${process.env.TMP_PASS}@cluster0.ij7qzua.mongodb.net/?retryWrites=true&w=majority`;
 
@@ -28,8 +25,7 @@ const client = new MongoClient(uri, {
 async function run() {
   try {
     // Connect the client to the server	(optional starting in v4.7)
-    await client.connect();
-
+    await client.connect(); 
 
     const carCollection = client.db('CarSite').collection('cars');
 
@@ -40,6 +36,12 @@ async function run() {
     })
 
 
+    app.get('/cars/:id', async(req, res) =>{
+      const id = req.params.id;
+      const query = {_id: new ObjectId(id)}
+      const result= await carCollection.findOne(query)
+      res.send(result)
+    })
 
     // Send a ping to confirm a successful connection
     await client.db("admin").command({ ping: 1 });
