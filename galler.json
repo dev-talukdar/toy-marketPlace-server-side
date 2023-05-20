@@ -1,0 +1,112 @@
+[
+    {
+        "id": 1,
+        "pictureUrl": "https://cdn.shopify.com/s/files/1/0011/8367/8476/products/dezire1_693270bb-93f5-4398-a052-892dc295bf04.png",
+        "name": "Sedan Car"
+    },
+    {
+        "id": 2,
+        "pictureUrl": "https://static-01.daraz.com.bd/p/37b5234ccdf3a5ef4bcc3358e4d1cc4f.jpg_720x720.jpg_.webp",
+        "name": "Sport Utility Vehicle"
+    },
+    {
+        "id": 3,
+        "pictureUrl": "https://image.smythstoys.com/original/desktop/147513.jpg",
+        "name": "Convertible Car"
+    },
+    {
+        "id": 4,
+        "pictureUrl": "https://images-na.ssl-images-amazon.com/images/I/51FojUoauHL._SL500_._AC_SL500_.jpg",
+        "name": "Police car"
+    },
+    {
+        "id": 5,
+        "pictureUrl": "https://cdn.shopify.com/s/files/1/0011/8367/8476/products/PoliceSedan5_300x@2x.png",
+        "name": "Sedan Police Car"
+    },
+    {
+        "id": 6,
+        "pictureUrl": "https://ae01.alicdn.com/kf/S75a9fb9a25154c6fb18904915f93806fl.jpg",
+        "name": "SUV Police Vehicle"
+    },
+    {
+        "id": 7,
+        "pictureUrl": "https://media.karousell.com/media/photos/products/2022/3/19/toy_ambulance_1647649973_31d648b4_progressive.jpg",
+        "name": "Ambulance"
+    },
+    {
+        "id": 8,
+        "pictureUrl": "https://st4.depositphotos.com/18588246/20454/i/600/depositphotos_204549414-stock-photo-toy-metal-car-children-adults.jpg",
+        "name": "Conventional Ambulance"
+    },
+    {
+        "id": 9,
+        "pictureUrl": "https://m.media-amazon.com/images/I/517jIp0J3nL._SL1025_.jpg",
+        "name": "Life Support Ambulance"
+    },
+    {
+        "id": 10,
+        "pictureUrl": "https://m.media-amazon.com/images/I/611JJhFFfpL._AC_SY355_.jpg",
+        "name": "Cutaway Ambulances"
+    },
+    {
+        "id": 11,
+        "pictureUrl": "https://cdn.shopify.com/s/files/1/0047/7505/1377/products/4_1000x.jpg",
+        "name": "Van"
+    },
+    {
+        "id": 12,
+        "pictureUrl": "https://m.media-amazon.com/images/I/61BhZfUy5dS._AC_SL1500_.jpg",
+        "name": "Cargo Van"
+    },
+    {
+        "id": 13,
+        "pictureUrl": "https://m.media-amazon.com/images/I/41G70WSTyXL._SX425_.jpg",
+        "name": "Camper Van"
+    },
+    {
+        "id": 14,
+        "pictureUrl": "https://rockwellantiquesdallas.com/wp-content/uploads/2017/08/Vintage-1980s-Zee-Toys-Dr-Pepper-Delivery-Truck.jpg",
+        "name": "Delivery Van"
+    },
+    {
+        "id": 15,
+        "pictureUrl": "https://i.ebayimg.com/images/g/HDEAAOSwZrtes81w/s-l1600.jpg",
+        "name": "Bus"
+    },
+    {
+        "id": 16,
+        "pictureUrl": "https://i5.walmartimages.com/asr/081fdae8-55ce-4a0b-87bb-14e2fc5b8f9f.77ee8792c02338d831f82bfe686a19c8.jpeg?",
+        "name": "School Bus"
+    },
+    {
+        "id": 17,
+        "pictureUrl": "https://static-01.daraz.com.bd/p/5d0139debd6c2e088a5cb54229afb0ee.jpg",
+        "name": "Double-Decker Bus"
+    },
+    {
+        "id": 18,
+        "pictureUrl": "https://m.media-amazon.com/images/I/712Qd71eiYL._SL1500_.jpg",
+        "name": "Truck"
+    },
+    {
+        "id": 19,
+        "pictureUrl": "https://i.ebayimg.com/images/g/aIcAAOSwh~peU~3O/s-l1600.jpg",
+        "name": "Pickup Truck"
+    },
+    {
+        "id": 20,
+        "pictureUrl": "https://www.constructionscalemodels.com/images/thumbs/0027042_mack-box-truck-ryder.jpg",
+        "name": "Box Truck"
+    },
+    {
+        "id": 21,
+        "pictureUrl": "https://m.media-amazon.com/images/I/71FiZ7LNGpL.jpg",
+        "name": "Dump Truck"
+    },
+    {
+        "id": 22,
+        "pictureUrl": "https://static.toiimg.com/thumb/resizemode-4,width-1200,height-900,msid-76426693/76426693.jpg",
+        "name": "Car"
+    }
+]
