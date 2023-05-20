@@ -25,14 +25,10 @@ const client = new MongoClient(uri, {
 async function run() {
   try {
     // Connect the client to the server	(optional starting in v4.7)
-    await client.connect(); 
+    await client.connect();  
 
-    app.post('/car', async(req, res) => {
-      const newCar = req.body;
-      console.log(newCar)
-    })
-
-    const carCollection = client.db('CarSite').collection('cars');
+    const carCollection = client.db('CarSite').collection('cars');   
+    const addedCollection = client.db('CarSite').collection('added');   
 
     app.get('/cars', async(req, res) => {
       const cursor = carCollection.find();
@@ -46,10 +42,35 @@ async function run() {
       const query = {_id: new ObjectId(id)}
 
       const options ={
-        projection: {name: 1, price: 1, seller_name: 1, quantity: 1, rating: 1, category: 1  }
+        projection: {name: 1, price: 1, seller_name: 1, quantity: 1, rating: 1, category: 1, photoUrl: 1  }
       };
 
       const result= await carCollection.findOne(query, options)
+      res.send(result)
+    })
+
+    // add a car 
+
+    app.get('/addCar', async(req, res) => {
+      console.log(req.query.email)
+      let query = {}
+
+      const result = await addedCollection.find(query).toArray();
+      res.send(result)
+    })
+    
+
+    app.post('/addCar', async(req, res) => {
+      const newCar = req.body;
+      console.log(newCar)
+      const result = await addedCollection.insertOne(newCar)
+      res.send(result)
+    });
+
+    app.delete('addCar/:id', async(req, res)=>{
+      const id = req.params.id;
+      const query = {_id: new ObjectId(id)}
+      const result = await addedCollection.deleteOne(query)
       res.send(result)
     })
 
