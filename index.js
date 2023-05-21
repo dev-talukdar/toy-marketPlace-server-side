@@ -30,6 +30,15 @@ async function run() {
     const carCollection = client.db('CarSite').collection('cars');   
     const addedCollection = client.db('CarSite').collection('added');   
 
+    // app.get('/cars', async(req, res) => {
+
+    //   const searchText = req.query?.carName 
+    //   const result = await carCollection.find({'carName': {$regex: new 
+    //   RegExp(searchText, 'i') }}).limit(20).toArray() 
+    //   res.send(result)
+    //   })
+     
+
     app.get('/cars', async(req, res) => {
       const cursor = carCollection.find();
       const result = await cursor.toArray();
@@ -49,7 +58,7 @@ async function run() {
       const query = {_id: new ObjectId(id)}
 
       const options ={
-        projection: {name: 1, price: 1, seller_name: 1, quantity: 1, rating: 1, category: 1, photoUrl: 1  }
+        projection: {name: 1, price: 1, seller_name: 1, quantity: 1, rating: 1, category: 1, subPicture: 1  }
       };
 
       const result= await carCollection.findOne(query, options)
